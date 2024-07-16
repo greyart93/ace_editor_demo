@@ -23,10 +23,12 @@ import "ace-builds/src-noconflict/theme-dracula";
 
 import "ace-builds/src-noconflict/ext-language_tools";
 
+var ecode;
 const Ace = () => {
   const [language, setLanguage] = useState("text");
   const [theme, setTheme] = useState("chrome");
   const [code, setCode] = useState(``);
+  ecode = code;
 
   function onValueChange(newValue) {
     console.log("change", newValue);
@@ -81,4 +83,4 @@ const Ace = () => {
 };
 
 export default Ace;
-export { code };
+export { ecode };

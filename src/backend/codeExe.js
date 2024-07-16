@@ -1,7 +1,7 @@
 // console.log("Hello CodeSandbox");
 // const request = require("request");
 import request from "request";
-import { code } from "../components/Ace";
+// import { ecode } from "../components/Ace";
 
 const options = {
   method: "POST",
@@ -14,7 +14,14 @@ const options = {
     files: [
       {
         name: "main.cpp",
-        content: `${code}`,
+        content: `#include <iostream>
+        using namespace std;
+
+        int main(){
+          cout << "ok it works";
+          return 0; 
+        }
+        `,
       },
     ],
   }),
@@ -36,10 +43,12 @@ const runCode = () => {
   });
 };
 
-runCode()
-  .then((output) => {
-    console.log("output: ", output);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+// runCode()
+//   .then((output) => {
+//     console.log("output: ", output);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+
+export default runCode;
