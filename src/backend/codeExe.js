@@ -52,3 +52,5 @@ const runCode = () => {
 //   });
 
 export default runCode;
+
+// use async await

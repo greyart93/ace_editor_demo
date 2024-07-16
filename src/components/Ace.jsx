@@ -43,7 +43,6 @@ const Ace = () => {
     setTheme(e.target.value);
   }
 
-  // Render editor
   return (
     <>
       <label htmlFor="lang">Language: </label>
