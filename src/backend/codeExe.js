@@ -36,7 +36,7 @@ const runCode = () => {
         const r = JSON.parse(body);
         console.log(body);
         console.log(r.stdout); // Hello glot
-        console.log(r.stderr); // ''
+        console.log(r.stderr); // '' .
         resolve(r.stdout);
       }
     });

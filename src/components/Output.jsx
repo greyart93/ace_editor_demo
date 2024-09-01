@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import runCode from "../backend/codeExe";
 
-// not working
+// not working ok
 
 const Output = () => {
   const [userOutput, setUserOutput] = useState(``);
